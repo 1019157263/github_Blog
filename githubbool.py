@@ -8,8 +8,10 @@ template = Template(f)
 k=template.render(li=su[::-1])
 
 dict=eval(open('index.config','r').read())
-
-l=open(dict['dz']+'index.html','w').write(k)
+#print(dict['dz'])#
+l=open(dict['dz']+'/index.html','w').write(k)
+#l=open('/sdcard/qd/1019157263.github.io/index.html','w').write(k)
+#print(k)
 os.chdir(dict['dz'])
 os.system('pwd')
 os.system('git add .')
