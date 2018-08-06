@@ -31,7 +31,7 @@ def xian_n():
 
     
 def xie(name,pwd):
-#增加文章
+#增加账号
     name=name
     pwd=pwd
     f=open('su.txt','a')
@@ -39,7 +39,7 @@ def xie(name,pwd):
     f.write('\n')
     su.append({'nid':time.strftime("%Y-%m-%d %H:%M:%S"),'name':name,'pwd':pwd})
 def cha(name):
-#查文章
+#查密码
     for i in su:
         if i['name']==name:
             return i['pwd']
